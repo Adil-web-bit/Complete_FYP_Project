@@ -1,0 +1,96 @@
+{
+  "status": "validated",
+  "source": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\data\\public\\public_keystroke_dataset.csv",
+  "dataset_type": "typing_public_dataset",
+  "trained_at_utc": "2026-06-12T18:55:14.308726+00:00",
+  "training_count": 46871,
+  "validation_count": 9375,
+  "label_counts": {
+    "normal": 27841,
+    "focused": 9882,
+    "stressed": 4268,
+    "distracted": 4880
+  },
+  "feature_names": [
+    "D1U1",
+    "D1U2",
+    "D1D2",
+    "U1D2",
+    "U1U2",
+    "D1U3",
+    "D1D3"
+  ],
+  "validation_accuracy": 0.5703466666666667,
+  "classification_report": {
+    "distracted": {
+      "precision": 0.21678321678321677,
+      "recall": 0.031762295081967214,
+      "f1-score": 0.05540661304736372,
+      "support": 976.0
+    },
+    "focused": {
+      "precision": 0.26521739130434785,
+      "recall": 0.06174089068825911,
+      "f1-score": 0.10016420361247948,
+      "support": 1976.0
+    },
+    "normal": {
+      "precision": 0.5990018570102136,
+      "recall": 0.9267372957442988,
+      "f1-score": 0.727670074021854,
+      "support": 5569.0
+    },
+    "stressed": {
+      "precision": 0.21153846153846154,
+      "recall": 0.03864168618266979,
+      "f1-score": 0.06534653465346535,
+      "support": 854.0
+    },
+    "accuracy": 0.5703466666666667,
+    "macro avg": {
+      "precision": 0.32313523165905994,
+      "recall": 0.26472054192429867,
+      "f1-score": 0.23714685633379062,
+      "support": 9375.0
+    },
+    "weighted avg": {
+      "precision": 0.4535621517484305,
+      "recall": 0.5703466666666667,
+      "f1-score": 0.4650882030393867,
+      "support": 9375.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      31,
+      56,
+      882,
+      7
+    ],
+    [
+      36,
+      122,
+      1802,
+      16
+    ],
+    [
+      68,
+      240,
+      5161,
+      100
+    ],
+    [
+      8,
+      42,
+      771,
+      33
+    ]
+  ],
+  "labels_order": [
+    "distracted",
+    "focused",
+    "normal",
+    "stressed"
+  ],
+  "notes": "Validation performed with train_test_split(test_size=0.2, stratify=y)."
+}

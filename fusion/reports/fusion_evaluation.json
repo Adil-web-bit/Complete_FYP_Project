@@ -1,0 +1,420 @@
+{
+  "status": "trained",
+  "trained_at_utc": "2026-06-13T08:22:08.401130+00:00",
+  "source": "{\"real_sessions\": \"C:\\\\Users\\\\AT\\\\OneDrive - University of Engineering and Technology Taxila\\\\Desktop\\\\FYP - 1\\\\data\\\\multimodal_sessions\", \"synthetic_dataset\": \"C:\\\\Users\\\\AT\\\\OneDrive - University of Engineering and Technology Taxila\\\\Desktop\\\\FYP - 1\\\\fusion\\\\data\\\\synthetic_fusion_dataset.csv\", \"combined_dataset\": \"C:\\\\Users\\\\AT\\\\OneDrive - University of Engineering and Technology Taxila\\\\Desktop\\\\FYP - 1\\\\fusion\\\\data\\\\fusion_training_dataset.csv\"}",
+  "dataset_file": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\fusion\\data\\fusion_training_dataset.csv",
+  "best_model_file": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\fusion\\models\\best_fusion_model.joblib",
+  "feature_columns": [
+    "face_angry_prob",
+    "face_disgust_prob",
+    "face_fear_prob",
+    "face_happy_prob",
+    "face_neutral_prob",
+    "face_sad_prob",
+    "face_surprise_prob",
+    "voice_angry_prob",
+    "voice_disgust_prob",
+    "voice_fear_prob",
+    "voice_happy_prob",
+    "voice_neutral_prob",
+    "voice_sad_prob",
+    "voice_surprise_prob",
+    "behavior_confidence",
+    "behavior_typed_text_length",
+    "behavior_total_key_events",
+    "behavior_backspace_count",
+    "behavior_unique_keys_count",
+    "behavior_typing_duration_seconds",
+    "behavior_keys_per_second",
+    "behavior_avg_key_interval_ms",
+    "behavior_std_key_interval_ms",
+    "behavior_total_scroll_events",
+    "behavior_scroll_duration_seconds",
+    "behavior_total_scroll_distance",
+    "behavior_avg_scroll_speed",
+    "behavior_max_scroll_speed",
+    "behavior_scroll_direction_changes",
+    "behavior_total_duration_seconds",
+    "behavior_D1U1",
+    "behavior_D1U2",
+    "behavior_D1D2",
+    "behavior_U1D2",
+    "behavior_U1U2",
+    "behavior_D1U3",
+    "behavior_D1D3",
+    "behavior_label_normal",
+    "behavior_label_focused",
+    "behavior_label_stressed",
+    "behavior_label_rushed",
+    "behavior_label_distracted"
+  ],
+  "model_comparison": [
+    {
+      "model_name": "Logistic Regression",
+      "status": "trained",
+      "accuracy": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          43,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      ],
+      "labels_order": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ]
+    },
+    {
+      "model_name": "Random Forest",
+      "status": "trained",
+      "accuracy": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          43,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      ],
+      "labels_order": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ]
+    },
+    {
+      "model_name": "XGBoost",
+      "status": "trained",
+      "accuracy": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          40,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          18,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          43,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16
+        ]
+      ],
+      "labels_order": [
+        "angry",
+        "disgust",
+        "fear",
+        "happy",
+        "neutral",
+        "sad",
+        "surprise"
+      ]
+    }
+  ],
+  "best_model": "Logistic Regression",
+  "best_metrics": {
+    "accuracy": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        45,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16
+      ]
+    ],
+    "labels_order": [
+      "angry",
+      "disgust",
+      "fear",
+      "happy",
+      "neutral",
+      "sad",
+      "surprise"
+    ]
+  },
+  "synthetic_dataset_file": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\fusion\\data\\synthetic_fusion_dataset.csv",
+  "message": "Fusion model trained and best model saved.",
+  "training_count": 1000,
+  "validation_count": 200,
+  "label_counts": {
+    "neutral": 227,
+    "happy": 214,
+    "angry": 200,
+    "sad": 119,
+    "fear": 91,
+    "surprise": 78,
+    "disgust": 71
+  },
+  "class_distribution": {
+    "neutral": 227,
+    "happy": 214,
+    "angry": 200,
+    "sad": 119,
+    "fear": 91,
+    "surprise": 78,
+    "disgust": 71
+  },
+  "data_source_counts": {
+    "synthetic": 1000
+  },
+  "target_source_counts": {
+    "synthetic": 1000
+  }
+}

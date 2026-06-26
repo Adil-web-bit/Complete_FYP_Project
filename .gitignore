@@ -1,0 +1,41 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.pytest_tmp/
+.pytest_tmp_run/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+
+# Build and package outputs
+build/
+dist/
+*.egg-info/
+
+# IDE and OS files
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and logs
+.env
+*.log
+
+# Runtime uploads and generated artifacts
+uploads/
+Voice detector/uploads/
+Typing_scrolling/artifacts/
+
+# Raw training datasets are large and should be downloaded/regenerated separately.
+Face gesture/Dataset/
+Voice detector/Dataset/
+

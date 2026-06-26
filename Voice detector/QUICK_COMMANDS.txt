@@ -1,0 +1,57 @@
+╔═══════════════════════════════════════════════════════════════╗
+║       EMOTION DETECTION - QUICK COMMANDS                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📋 COMMANDS (Copy and paste in PowerShell):
+
+─────────────────────────────────────────────────────────────────
+
+1️⃣  MODEL TRAIN KARNE KE LIYE:
+   (Training karne mein 30-60 minutes lag sakte hain)
+
+cd "C:\Users\AT\OneDrive - University of Engineering and Technology Taxila\Desktop\Voice detector"; C:\VoiceDetector\venv\Scripts\python.exe train_model.py
+
+─────────────────────────────────────────────────────────────────
+
+2️⃣  MODEL TEST KARNE KE LIYE:
+   (Sample audio files pe test karega)
+
+cd "C:\Users\AT\OneDrive - University of Engineering and Technology Taxila\Desktop\Voice detector"; C:\VoiceDetector\venv\Scripts\python.exe test_model.py
+
+─────────────────────────────────────────────────────────────────
+
+3️⃣  WEB APPLICATION RUN KARNE KE LIYE:
+   (Browser mein http://127.0.0.1:5000 kholo)
+
+cd "C:\Users\AT\OneDrive - University of Engineering and Technology Taxila\Desktop\Voice detector"; C:\VoiceDetector\venv\Scripts\python.exe app.py
+
+─────────────────────────────────────────────────────────────────
+
+💡 EASY METHOD - BATCH FILES:
+
+Double-click ye files:
+  • 1_TRAIN_MODEL.bat    → Model train karne ke liye
+  • 2_TEST_MODEL.bat     → Model test karne ke liye  
+  • 3_RUN_WEB_APP.bat    → Web app run karne ke liye
+
+─────────────────────────────────────────────────────────────────
+
+📁 OUTPUT FILES (models folder mein):
+  • emotion_model.h5         → Trained model
+  • best_model.h5            → Best model (highest accuracy)
+  • label_encoder.pkl        → Emotion labels
+  • training_history.pkl     → Training history
+
+─────────────────────────────────────────────────────────────────
+
+🎭 EMOTIONS DETECTED:
+  1. Neutral    😐
+  2. Calm       😌
+  3. Happy      😄
+  4. Sad        😢
+  5. Angry      😠
+  6. Fearful    😨
+  7. Disgust    🤢
+  8. Surprised  😲
+
+═══════════════════════════════════════════════════════════════════

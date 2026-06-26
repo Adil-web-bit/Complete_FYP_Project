@@ -1,0 +1,29 @@
+{
+  "status": "trained",
+  "message": "Public dataset model trained and saved.",
+  "source": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\data\\public\\public_keystroke_dataset.csv",
+  "dataset_type": "typing_public_dataset",
+  "trained_at_utc": "2026-06-12T18:55:14.308726+00:00",
+  "training_count": 46871,
+  "validation_count": 9375,
+  "label_counts": {
+    "normal": 27841,
+    "focused": 9882,
+    "stressed": 4268,
+    "distracted": 4880
+  },
+  "feature_names": [
+    "D1U1",
+    "D1U2",
+    "D1D2",
+    "U1D2",
+    "U1U2",
+    "D1U3",
+    "D1D3"
+  ],
+  "validation_accuracy": 0.5703466666666667,
+  "model_file": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\models\\behavior_model.joblib",
+  "public_training_report_file": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\models\\public_training_report.json",
+  "public_evaluation_report_file": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\models\\public_evaluation_report.json",
+  "notes": "Public typing datasets may not match browser-captured data. Use for demo/baseline only."
+}

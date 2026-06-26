@@ -1,0 +1,12 @@
+{
+  "status": "not_enough_data",
+  "message": "Not enough labeled sessions to train a model.",
+  "training_count": 0,
+  "required_minimum": 10,
+  "label_counts": {},
+  "feature_names": [],
+  "validation_accuracy": null,
+  "model_file": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\models\\behavior_model.joblib",
+  "evaluation_report_file": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\models\\evaluation_report.json",
+  "trained_at_utc": "2026-06-12T15:00:11.460427+00:00"
+}

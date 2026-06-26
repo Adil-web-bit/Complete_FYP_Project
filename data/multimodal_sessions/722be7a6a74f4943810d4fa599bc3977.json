@@ -1,0 +1,135 @@
+{
+  "session_id": "722be7a6a74f4943810d4fa599bc3977",
+  "timestamp": "2026-06-13T08:26:14.588763+00:00",
+  "face": {
+    "modality": "face",
+    "label": "neutral",
+    "raw_label": "neutral",
+    "confidence": 0.463419220753775,
+    "probabilities": {
+      "angry": 0.1749692677903896,
+      "disgust": 0.0018652235998401516,
+      "fear": 0.10284190446563952,
+      "happy": 0.04187129737822999,
+      "neutral": 0.463419220753775,
+      "sad": 0.1907318052347937,
+      "surprise": 0.024301280777332044
+    },
+    "features": {},
+    "metadata": {
+      "model_path": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\Face gesture\\emotion_detection_model.keras",
+      "input_shape": [
+        48,
+        48,
+        1
+      ],
+      "face_detection_confidence": 0.9991419315338135
+    }
+  },
+  "voice": {
+    "modality": "voice",
+    "label": "neutral",
+    "raw_label": "calm",
+    "confidence": 0.8721295796475004,
+    "probabilities": {
+      "angry": 0.0014620668688675319,
+      "disgust": 0.0018566559279852848,
+      "fear": 0.034393890082972466,
+      "happy": 0.0005451754885871482,
+      "neutral": 0.8721295796475004,
+      "sad": 0.08149476105696303,
+      "surprise": 0.008117870927124142
+    },
+    "features": {
+      "feature_count": 180,
+      "mfcc": 40,
+      "chroma": 12,
+      "mel": 128
+    },
+    "metadata": {
+      "model_path": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\Voice detector\\models\\best_model.h5",
+      "encoder_path": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\Voice detector\\models\\label_encoder.pkl",
+      "sample_rate": 22050,
+      "duration_seconds": 2.5
+    }
+  },
+  "behavior": {
+    "modality": "behavior",
+    "label": "normal",
+    "raw_label": "normal",
+    "confidence": 0.74,
+    "probabilities": {
+      "angry": 0.05934285714285714,
+      "disgust": 0.051942857142857145,
+      "fear": 0.06674285714285715,
+      "happy": 0.14074285714285717,
+      "neutral": 0.5551428571428572,
+      "sad": 0.07414285714285715,
+      "surprise": 0.051942857142857145
+    },
+    "features": {
+      "typed_text_length": 100.0,
+      "total_key_events": 252.0,
+      "backspace_count": 26.0,
+      "unique_keys_count": 28.0,
+      "typing_duration_seconds": 33.433,
+      "keys_per_second": 7.537462985672838,
+      "avg_key_interval_ms": 133.199203187251,
+      "std_key_interval_ms": 473.3201204403926,
+      "total_scroll_events": 8.0,
+      "scroll_duration_seconds": 0.753,
+      "total_scroll_distance": 162.66666793823242,
+      "avg_scroll_speed": 216.02479141863535,
+      "max_scroll_speed": 2018.5185538397895,
+      "scroll_direction_changes": 0.0,
+      "total_duration_seconds": 40.574,
+      "D1U1": 88.65873015873017,
+      "D1U2": 355.08,
+      "D1D2": 266.896,
+      "U1D2": 265.1333333333333,
+      "U1U2": 273.62295081967216,
+      "D1U3": 621.1129032258065,
+      "D1D3": 533.1451612903226
+    },
+    "metadata": {
+      "model_type": "trained_ml",
+      "reason": "Predicted by trained ML model.",
+      "source": "E:\\Human Behaviour Predictor Typing Scrolling\\human_behavior_predictor\\data\\public\\public_keystroke_dataset.csv",
+      "dataset_type": "typing_public_dataset",
+      "sentiment_bucket": "neutral"
+    }
+  },
+  "final_prediction": {
+    "label": "neutral",
+    "confidence": 0.6437529773348752,
+    "scores": {
+      "angry": 0.2655607967486036,
+      "disgust": 0.005729061583780951,
+      "fear": 0.04676683989069499,
+      "happy": 0.006178193977924721,
+      "neutral": 0.6437529773348752,
+      "sad": 0.029783926893680458,
+      "surprise": 0.0022282035704399143
+    },
+    "weights": {},
+    "modality_breakdown": {
+      "face": {
+        "label": "neutral",
+        "confidence": 0.463419220753775
+      },
+      "voice": {
+        "label": "neutral",
+        "confidence": 0.8721295796475004
+      },
+      "behavior": {
+        "label": "normal",
+        "confidence": 0.74
+      }
+    },
+    "status": "ml_fused",
+    "fusion_method": "trained_fusion_model",
+    "model_name": "Logistic Regression",
+    "model_file": "C:\\Users\\AT\\OneDrive - University of Engineering and Technology Taxila\\Desktop\\FYP - 1\\fusion\\models\\best_fusion_model.joblib"
+  },
+  "confidence": 0.6437529773348752
+}

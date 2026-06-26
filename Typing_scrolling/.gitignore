@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/
+!.streamlit/
+!.streamlit/config.toml
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Data + artifacts (keep folder structure via .gitkeep)
+data/raw/*
+data/processed/*
+data/exports/*
+data/public/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/exports/.gitkeep
+!data/public/.gitkeep
+
+# Generated artifacts
+artifacts/
+
+# Too large for normal GitHub pushes; regenerate with the training pipeline.
+models/behavior_model.joblib

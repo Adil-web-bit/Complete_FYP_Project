@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Monitoring Component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title">Monitoring Widget</div>
+        <div class="subtitle">Capture typing events in-browser and return them to Streamlit.</div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="primary">Start Monitoring</button>
+        <button id="stopBtn" class="danger" disabled>Stop Monitoring</button>
+        <button id="clearBtn">Clear</button>
+        <div id="status" class="status idle">idle</div>
+      </div>
+      <div id="warning" class="warning" style="display:none;"></div>
+
+      <div class="grid">
+        <div class="panel">
+          <div class="panelTitle">Typing Area</div>
+          <textarea id="typingArea" rows="6" placeholder="Type naturally here..."></textarea>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="card">
+          <div class="cardLabel">Text length</div>
+          <div id="typedLen" class="cardValue">0</div>
+        </div>
+        <div class="card">
+          <div class="cardLabel">Typing events</div>
+          <div id="typingCount" class="cardValue">0</div>
+        </div>
+        <div class="card">
+          <div class="cardLabel">Duration (s)</div>
+          <div id="duration" class="cardValue">0.0</div>
+        </div>
+      </div>
+
+      <div class="hint">
+        Tip: Click <b>Stop Monitoring</b> to freeze the session. The data is returned directly to Streamlit.
+      </div>
+      <div class="privacyNotice">
+        Privacy notice: Only interactions inside this component are captured. Do not use this app to secretly monitor anyone.
+      </div>
+    </div>
+
+    <noscript>
+      This monitoring widget requires JavaScript enabled in your browser.
+    </noscript>
+
+    <script>
+      // Load Streamlit component bridge:
+      // 1) Try local vendor first (no internet required).
+      // 2) Fall back to CDN if vendor isn't present.
+      // Always load main.js so the UI still works even if the bridge fails.
+      (function () {
+        function loadScript(src, onload, onerror) {
+          var s = document.createElement("script");
+          s.src = src;
+          s.async = false;
+          if (onload) s.onload = onload;
+          if (onerror) s.onerror = onerror;
+          document.body.appendChild(s);
+        }
+
+        function loadMain() {
+          loadScript("./main.js");
+        }
+
+        loadScript(
+          "./vendor/streamlit-component-lib.js",
+          function () {
+            loadMain();
+          },
+          function () {
+            loadScript(
+              "https://unpkg.com/streamlit-component-lib@latest/dist/index.js",
+              function () {
+                loadMain();
+              },
+              function () {
+                loadMain();
+              }
+            );
+          }
+        );
+      })();
+    </script>
+  </body>
+</html>
