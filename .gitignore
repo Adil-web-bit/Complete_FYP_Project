@@ -34,8 +34,8 @@ desktop.ini
 uploads/
 Voice detector/uploads/
 Typing_scrolling/artifacts/
+data/multimodal_sessions/*.json
 
 # Raw training datasets are large and should be downloaded/regenerated separately.
 Face gesture/Dataset/
 Voice detector/Dataset/
-
